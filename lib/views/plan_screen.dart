@@ -4,7 +4,8 @@ import '../provider/plan_provider.dart';
 
 
 class PlanScreen extends StatefulWidget {
-  const PlanScreen({super.key});
+  final Plan plan;
+  const PlanScreen({super.key, required this.plan});
 
   @override
   State createState() => _PlanScreenState();
@@ -35,8 +36,18 @@ class _PlanScreenState extends State<PlanScreen> {
       appBar: AppBar(title: const Text('Master Plan'),
       foregroundColor: Colors.white,
       backgroundColor: Colors.purple,),
-      body: _buildList(),
-      floatingActionButton: _buildAddTaskButton(),
+      body: ValueListenableBuilder<Plan>(
+       valueListenable: PlanProvider.of(context),
+       builder: (context, plan, child) {
+         return Column(
+           children: [
+             Expanded(child: _buildList(plan)),
+             SafeArea(child: Text(plan.completenessMessage))
+           ],
+         );
+       },
+     ),
+      floatingActionButton: _buildAddTaskButton(context),
     );
   }
 

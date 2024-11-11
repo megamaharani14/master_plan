@@ -1,4 +1,5 @@
-Praktikum 1:
+Praktikum 1: Dasar State dengan Model-View
+
 Langkah 1: buat project flutter dengan nama master_plan selanjutnya tambahkan folder models dan views di dalam lib.
 langkah 2: Membuat model task.dart di dalam folder models.
 langkah 3: Membuat file plan.dart di dalam folder models.
@@ -26,7 +27,8 @@ Jawab: praktikum langkah 4 untuk menyederhanakan proses pengolaan dan pengimpora
 5.Apa kegunaan method pada Langkah 11 dan 13 dalam lifecyle state ?
 
 
-Praktikum 2:
+Praktikum 2: Mengelola Data Layer dengan InheritedWidget dan InheritedNotifier
+
 Langkah 1: Membuat file plan_provider.dart di dalam folder provider
 Langkah 2: Rubah main dart bagian home menjadi planprovider dan import.
 ![Screenshot master_plan](images/editmaindart.png)
@@ -34,7 +36,24 @@ Langkah 3: Tambahkan method di dalam model class plan.dart
 ![Screenshot master_plan](images/tambahkanmethod.png)
 Langkah 4: Edit Planscreen dengan menggunakan data dari PlanProvider.
 Langkah 5: Edit method _buildAddTaskButton, tambahkan buildcontext dan gunakan planprovider sebagai sumbernya.
+![Screenshot master_plan](images/buildAddTaskButton.png)
 Langkah 6: Edit method _buildTaskTile menjadi TextFormField.
-Langkah 7: Edit _buildList
+![Screenshot master_plan](images/buildTaskTile.png)
+Langkah 7: Edit _buildList 
+![Screenshot master_plan](images/buildList.png)
+Langkah 8: Tambahkan widget SafeArea 
+![Screenshot master_plan](images/build.png)
+Hasil:![Screenshot master_plan](images/praktikum2.png)
+
+
+Tugas Praktikum:
+2.Jelaskan mana yang dimaksud InheritedWidget pada langkah tersebut! Mengapa yang digunakan InheritedNotifier?
+3.Jelaskan maksud dari method di langkah 3 pada praktikum tersebut! Mengapa dilakukan demikian?
+4.Lakukan capture hasil dari Langkah 9, kemudian jelaskan apa yang telah Anda buat!
+
+
+Praktikum 3: Membuat State di Multiple Scieens
+
+
 
 
