@@ -53,7 +53,12 @@ Tugas Praktikum:
 
 
 Praktikum 3: Membuat State di Multiple Scieens
-
+Langkah 1: Mengedit PlanProvider
+Langkah 2: Mengedit main.dart 
+Langkah 3: Lalu edit plan_screen.dart
+Hasil:
+![Screenshot master_plan](images/praktikum3.png)
+![Screenshot master_plan](images/praktikum3.1.png)
 
 
 

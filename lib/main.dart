@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:master_plan/models/data_layer.dart';
-import './views/plan_screen.dart';
+import 'views/plan_creator_screen.dart';
 import './provider/plan_provider.dart';
 
 void main() => runApp(MasterPlanApp());
@@ -16,7 +16,7 @@ class MasterPlanApp extends StatelessWidget {
         title: 'State management app', theme: ThemeData(
         primarySwatch: Colors.blue,
         ),
-        home: const PlanScreen(),
+        home: const PlanCreatorScreen(),
       ),
     );
   }
